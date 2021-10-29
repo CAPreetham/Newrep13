@@ -13,15 +13,6 @@ observe user is able to test sanity flow
     user adds item to cart
     user lands on cart and verifys cart
 
-observe user is able to test regression flow
-    [Tags]  regression
-    #Given User Launch Browser for Flipkart
-    #when User lands on Homepage Enter MobileNumber and Password
-    #Click on login 
-    #then user searches for Powerbank
-    #user selects best selling Product then lands on product page
-    #user adds item to cart
-    #user lands on cart and verifys cart
 
 *** Variables ***
 
@@ -54,7 +45,7 @@ user adds item to cart
     Click Element    xpath://*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button
 
 user lands on cart and verifys cart
-    Switch Window    ${first}
+    #Switch Window    ${first}
     #Click Image    xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[1]/div/a[1]/img
     Wait Until Page Contains Element  ${select_prod}    timeout=20s
     Click Element    xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[5]/div/div/a
