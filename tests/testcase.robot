@@ -11,7 +11,7 @@ observe user is able to test sanity flow
     then user searches for Powerbank
     user selects best selling Product then lands on product page
     user adds item to cart
-    user lands on cart and verifys cart
+    #user lands on cart and verifys cart
 
 
 *** Variables ***
@@ -44,7 +44,7 @@ user selects best selling Product then lands on product page
 user adds item to cart
     Click Element    xpath://*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button
 
-user lands on cart and verifys cart
+#user lands on cart and verifys cart
     #Switch Window    ${first}
     #Click Image    xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[1]/div/a[1]/img
     #Wait Until Page Contains Element  ${select_prod}    timeout=20s
