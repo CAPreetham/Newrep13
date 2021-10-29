@@ -47,6 +47,6 @@ user adds item to cart
 user lands on cart and verifys cart
     #Switch Window    ${first}
     #Click Image    xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[1]/div/a[1]/img
-    Wait Until Page Contains Element  ${select_prod}    timeout=20s
-    Click Element    xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[5]/div/div/a
+    #Wait Until Page Contains Element  ${select_prod}    timeout=20s
+    #Click Element    xpath://*[@id="container"]/div/div[1]/div[1]/div[2]/div[5]/div/div/a
 
